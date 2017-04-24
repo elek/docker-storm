@@ -1,3 +1,0 @@
-storm.zookeeper.servers.1: localhost
-nimbus.seeds: ["localhost"]
-

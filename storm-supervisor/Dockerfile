@@ -1,2 +1,2 @@
-FROM elek/storm-base
+FROM elek/storm 
 CMD ["/opt/storm/bin/storm supervisor"]
