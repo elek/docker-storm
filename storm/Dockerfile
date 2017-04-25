@@ -1,4 +1,4 @@
-FROM elek/bigdata-base:14
+FROM elek/bigdata-base:15
 ENV CONF_DIR /opt/storm/conf
 ADD url ./
 RUN apk add --update --no-cache python
