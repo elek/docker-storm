@@ -14,7 +14,7 @@ For more detailed examples check the other repositories under the flokkr organiz
 
 There are more detailed examples with using:
 
-*  [docker-compose](https://github.com/flokkr/runtime-compose) (single-host)
+* [docker-compose](https://github.com/flokkr/runtime-compose) (single-host)
 * [docker-swarm](https://github.com/flokkr/runtime-swarm)  
 * [consul and docker-compose](https://github.com/flokkr/runtime-consul)  (multi-host)
 * [consul and nomad](https://github.com/flokkr/runtime-nomad) (multi-host)
