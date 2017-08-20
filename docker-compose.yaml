@@ -1,0 +1,26 @@
+version: "2"
+services:
+  zookeeper:
+      image: flokkr/zookeeper
+      hostname: zookeeper
+      environment:
+        ZOO.CFG_clientPort: 2181
+        ZOO.CFG_dataDir: /tmp/zookeeper
+  nimbus:
+      image: flokkr/storm-nimbus
+      hostname: nimbus
+      environment:
+        STORM.YAML!PROPERTIES_storm.zookeeper.servers: "[\"zookeeper\"]"
+        STORM.YAML!PROPERTIES_nimbus.seeds: "[\"nimbus\"]"
+  ui:
+      image: flokkr/storm-ui
+      ports:
+        - "8080:8080"
+      environment:
+        STORM.YAML!PROPERTIES_storm.zookeeper.servers: "[\"zookeeper\"]"
+        STORM.YAML!PROPERTIES_nimbus.seeds: "[\"nimbus\"]"
+  supervisor:
+      image: flokkr/storm-supervisor
+      environment:
+        STORM.YAML!PROPERTIES_storm.zookeeper.servers: "[\"zookeeper\"]"
+        STORM.YAML!PROPERTIES_nimbus.seeds: "[\"nimbus\"]"
