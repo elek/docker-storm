@@ -1,3 +1,18 @@
+# !Archived!
+
+__This project is archived. Originally it was part of the https://github.com/flokkr project, but it's no longer maintained.__
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 # Apache Storm docker images
 
 These images are part of the bigdata [docker image series](https://github.com/flokkr). All of the images use the same [base docker image](https://github.com/elek/docker-bigdata-base) which contains advanced configuration loading. 
